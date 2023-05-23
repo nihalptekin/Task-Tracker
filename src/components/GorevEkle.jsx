@@ -30,9 +30,9 @@ const handleClick = () => {
     <div>
       <header className="header">
         <h1>TASK TRACKER</h1>
-        <button className={showImage ? "btn" : "btn2"} onClick={handleClick}>{showImage ? "Close Add Task Bar" : "Show Add Task Bar"}</button>
+        <button className={showImage ? "btn2" : "btn"} onClick={handleClick}>{showImage ? "Show Add Task Bar" : "Close Add Task Bar"}</button>
       </header> 
-      {showImage && (
+      {!showImage && (
      <form onSubmit={gonder}>
         <div className="form-control">
           <label htmlFor="text">Task</label>
